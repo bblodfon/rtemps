@@ -17,12 +17,12 @@ This function creates a new directory under the current directory, which will
 contain the given files of the specified template, ready to be rendered.
 }
 \details{
-The available templates are: \emph{united_html} (default).
-The name of the main \code{.Rmd} file will be \emph{test.Rmd}.
+The available templates are: \emph{united_html} (default), \emph{bookdown_lite}.
+The name of the main \code{.Rmd} file will be \emph{index.Rmd}.
 }
 \examples{
 \dontrun{
-create_rtemp(dirname = "tmp_dir", format = "united_html")
+create_rtemp(dirname = "tmp_dir", template = "united_html")
 }
 
 }
