@@ -1,0 +1,11 @@
+Package: rtemps
+Type: Package
+Title: My personal R templates
+Version: 0.1.0
+Authors@R: person("John", "Zobolas", role = c("aut", "cph", "cre"), 
+  email = "bblodfon@gmail.com", comment = c(ORCID = "0000-0002-3609-8674"))
+Description: A collection of R templates. My personal favourites!
+License: MIT + file LICENSE
+URL: https://github.com/bblodfon/r-temps
+Encoding: UTF-8
+LazyData: true

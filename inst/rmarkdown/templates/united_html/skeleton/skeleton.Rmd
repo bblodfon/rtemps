@@ -1,0 +1,69 @@
+---
+title: "Title"
+author: "[John Zobolas](https://github.com/bblodfon)"
+date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    css: style.css
+    theme: united
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 4
+    number_sections: false
+    code_folding: hide
+    code_download: true
+---
+
+## Intro {-}
+
+Nulla auctor egestas [tincidunt](#Sub-analysis).
+
+## Conclusion {-}
+
+<div class="green-box">
+  - *Cras tincidunt* felis venenatis pretium iaculis[<sup>1</sup>](#footnote1). 
+  - Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
+</div>
+<br>
+<div class="orange-box">
+Be careful, be gentle, be brave!
+</div>
+
+## Input {-}
+
+Loading libraries:
+```{r Load libraries, message = FALSE}
+library(xfun)
+library(DT)
+```
+
+<div id="table1">A nice table example:</div>
+```{r}
+DT::datatable(mtcars, options = list(pageLength = 3))
+```
+
+## Analysis {-}
+
+`Vestibulum` imperdiet[<sup>2</sup>](#footnote2), ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
+
+### Sub-analysis {-}
+
+Suspendisse potenti. Cras pulvinar ligula ac nisi porttitor, volutpat congue orci tincidunt. Pellentesque non mi congue, porta enim eget, venenatis sem. Integer suscipit vulputate tellus, eget commodo dolor gravida vel. Suspendisse gravida gravida ligula, in interdum sapien molestie ut.
+
+#### S2-analysis {-}
+
+<div class="blue-box">
+In ut vehicula risus.
+</div>
+
+## R session info {-}
+
+```{r session info, comment=""}
+xfun::session_info()
+```
+
+----
+1. <div id="footnote1">Nullam quis sem nunc</div>
+2. <div id="footnote2">In eget eros sit amet leo feugiat consequat</div>
