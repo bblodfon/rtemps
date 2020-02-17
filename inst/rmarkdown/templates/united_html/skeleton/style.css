@@ -3,6 +3,11 @@ body {
   text-align: justify;
 }
 
+h1.title {
+  font-size: 47px;
+  color: firebrick;
+}
+
 h1,h2,h3,h4,h5 {
   text-align: left;
 }

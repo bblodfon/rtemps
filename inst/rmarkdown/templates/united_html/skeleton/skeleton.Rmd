@@ -10,57 +10,82 @@ output:
     toc_float:
       collapsed: false
       smooth_scroll: true
-    toc_depth: 4
+    toc_depth: 3
     number_sections: false
     code_folding: hide
     code_download: true
 ---
 
-## Intro {-}
+# Intro {-}
 
-Nulla auctor egestas [tincidunt](#Sub-analysis).
+Nulla auctor egestas [tincidunt](#sub-analysis).
 
-## Conclusion {-}
+# Input {-}
+
+Loading libraries:
+```{r Load libraries, message = FALSE}
+library(DT)
+library(ggplot2)
+library(xfun)
+```
+
+# Analysis {-}
+
+`Vestibulum` imperdiet[<sup>1</sup>](#footnote1), ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
+
+<div id="Table1">A nice table example:</div>
+```{r}
+DT::datatable(mtcars, options = list(pageLength = 3))
+```
+
+## Sub analysis {-}
+
+> Suspendisse potenti
+
+----
+
+Cras pulvinar ligula ac nisi porttitor, volutpat congue orci tincidunt. Pellentesque non mi congue, porta enim eget, venenatis sem. Integer suscipit vulputate tellus, eget commodo dolor gravida vel. Suspendisse gravida gravida ligula, in interdum sapien molestie ut.
+
+### Yet another analysis {-}
+
+<div class="blue-box">
+In ut vehicula risus. [That](#Table1) table!
+</div>
+
+```{r example plot, warning = FALSE, fig.align='center'}
+options(scipen=999)  # turn-off scientific notation like 1e+48
+theme_set(theme_bw())  # pre-set the bw theme.
+data("midwest", package = "ggplot2")
+# midwest <- read.csv("http://goo.gl/G1K41K")  # bkup data source
+
+# Scatterplot
+gg = ggplot(midwest, aes(x=area, y=poptotal)) + 
+  geom_point(aes(col=state, size=popdensity)) + 
+  geom_smooth(method="loess", se=F) + 
+  xlim(c(0, 0.1)) + 
+  ylim(c(0, 500000)) + 
+  labs(subtitle="Area Vs Population", 
+       y="Population", 
+       x="Area", 
+       title="Scatterplot", 
+       caption = "Source: midwest")
+
+plot(gg)
+```
+
+# Conclusion {-}
 
 <div class="green-box">
-  - *Cras tincidunt* felis venenatis pretium iaculis[<sup>1</sup>](#footnote1). 
+  - *Cras tincidunt* felis venenatis pretium iaculis[<sup>2</sup>](#footnote2). 
   - Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
+  - That sums it up!
 </div>
 <br>
 <div class="orange-box">
 Be careful, be gentle, be brave!
 </div>
 
-## Input {-}
-
-Loading libraries:
-```{r Load libraries, message = FALSE}
-library(xfun)
-library(DT)
-```
-
-<div id="table1">A nice table example:</div>
-```{r}
-DT::datatable(mtcars, options = list(pageLength = 3))
-```
-
-## Analysis {-}
-
-`Vestibulum` imperdiet[<sup>2</sup>](#footnote2), ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
-
-### Sub-analysis {-}
-
-> Suspendisse potenti
-
-Cras pulvinar ligula ac nisi porttitor, volutpat congue orci tincidunt. Pellentesque non mi congue, porta enim eget, venenatis sem. Integer suscipit vulputate tellus, eget commodo dolor gravida vel. Suspendisse gravida gravida ligula, in interdum sapien molestie ut.
-
-#### S2-analysis {-}
-
-<div class="blue-box">
-In ut vehicula risus.
-</div>
-
-## R session info {-}
+# R session info {-}
 
 ```{r session info, comment=""}
 xfun::session_info()
