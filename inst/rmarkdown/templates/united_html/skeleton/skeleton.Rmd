@@ -14,11 +14,13 @@ output:
     number_sections: false
     code_folding: hide
     code_download: true
+bibliography: references.bib
+link-citations: true
 ---
 
 # Intro {-}
 
-Nulla auctor egestas [tincidunt](#sub-analysis).
+Nulla auctor egestas [tincidunt](#sub-analysis). Citing an article [@article]. Refer to section [Analysis].
 
 # Input {-}
 
@@ -31,7 +33,7 @@ library(xfun)
 
 # Analysis {-}
 
-`Vestibulum` imperdiet[<sup>1</sup>](#footnote1), ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
+`Vestibulum` imperdiet^[Nullam quis sem nunc], ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
 
 <div id="Table1">A nice table example:</div>
 ```{r}
@@ -76,7 +78,7 @@ plot(gg)
 # Conclusion {-}
 
 <div class="green-box">
-  - *Cras tincidunt* felis venenatis pretium iaculis[<sup>2</sup>](#footnote2). 
+  - *Cras tincidunt* felis venenatis pretium iaculis^[In eget eros sit amet leo feugiat consequat]. 
   - Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
   - That sums it up!
 </div>
@@ -91,6 +93,4 @@ Be careful, be gentle, be brave!
 xfun::session_info()
 ```
 
-----
-1. <div id="footnote1">Nullam quis sem nunc</div>
-2. <div id="footnote2">In eget eros sit amet leo feugiat consequat</div>
+# References {-}
