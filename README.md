@@ -1,4 +1,4 @@
-# r-templates
+# rtemps
 
 My personal favourite `R` templates for doing reproducible data analyses among others.
 
