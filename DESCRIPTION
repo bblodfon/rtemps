@@ -6,7 +6,7 @@ Authors@R: person("John", "Zobolas", role = c("aut", "cph", "cre"),
   email = "bblodfon@gmail.com", comment = c(ORCID = "0000-0002-3609-8674"))
 Description: A collection of Rmarkdown templates for nicely structured data analyses.
 License: MIT + file LICENSE
-URL: https://github.com/bblodfon/r-temps
+URL: https://github.com/bblodfon/rtemps
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
