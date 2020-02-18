@@ -5,7 +5,7 @@ date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
 description: "Description"
 url: 'https\://username.github.io/reponame/'
 github-repo: "username/reponame"
-bibliography: "references.bib"
+bibliography: references.bib
 link-citations: true
 site: bookdown::bookdown_site
 ---
