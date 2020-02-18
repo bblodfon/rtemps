@@ -33,6 +33,7 @@ cd my_dir
 ./build_book.sh
 ```
 - The output of the *Bookdown Lite* theme is placed under a `docs` directory, so that it can easily be rendered with [GitHub Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+- The *Bookdown Lite* can be easily converted to a **multi-paged document** by configuring the `split_by` property in the `_output.yml` template file ([check the doc](https://bookdown.org/yihui/bookdown/html.html#gitbook-style)).
 - To use the *United HTML Document* theme from the command line, run:
 ```r
 rtemps::create_rtemp(dirname = "my_dir", template = "united_html")
