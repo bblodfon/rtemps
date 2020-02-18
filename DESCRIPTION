@@ -1,7 +1,7 @@
 Package: rtemps
 Type: Package
 Title: R templates for reproducible data analyses
-Version: 0.2
+Version: 0.2.0
 Authors@R: person("John", "Zobolas", role = c("aut", "cph", "cre"), 
   email = "bblodfon@gmail.com", comment = c(ORCID = "0000-0002-3609-8674"))
 Description: A collection of Rmarkdown templates for nicely structured data analyses.
