@@ -1,6 +1,6 @@
 # rtemps
 
-My personal favourite `R` templates for doing reproducible data analyses among others.
+My personal favourite `R` templates for doing reproducible data analyses.
 
 ## Available Themes
 
@@ -24,8 +24,8 @@ Once the templates are installed, you can use them in 2 ways:
 
 ## Notes
 
-- For the *Bookdown Lite* theme to work in Rstudio (using option 1), **you have to rename the main *.Rmd* file to `index.Rmd` inside the created directory**. 
-Only then the **Rstudio** IDE will 'understand' the format and create the `build Tool` option when you **create a project inside the newly created directory**. 
+- For the *Bookdown Lite* theme to work in RStudio (using option 1), **you have to rename the main *.Rmd* file to `index.Rmd` inside the created directory**. 
+Only then the **RStudio** IDE will 'understand' the format and create the `build Tool` option when you **create a project inside the newly created directory**. 
 Of course, you can always just use the `build_book.sh` script to render the book directly as in the commands below:
 ```bash
 Rscript -e "rtemps::create_rtemp(dirname = 'my_dir', template = 'bookdown_lite')"
