@@ -4,7 +4,7 @@ My personal favourite `R` templates for doing reproducible data analyses.
 
 ## Available Themes
 
-- [United HTML Document](https://bootswatch.com/united/): a bootstrap-based single [Rmarkdown](https://bookdown.org/yihui/rmarkdown/) document
+- [United HTML Document](https://bootswatch.com/united/): a bootstrap-based single [R Markdown](https://bookdown.org/yihui/rmarkdown/) document
 - [Bookdown Lite](https://bookdown.org/yihui/bookdown/): a single-paged [gitbook-based](https://www.gitbook.com/) document
 
 ## Install
