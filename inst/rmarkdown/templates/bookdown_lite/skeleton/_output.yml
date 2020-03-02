@@ -1,4 +1,6 @@
 bookdown::gitbook:
+  includes:
+    in_header: hide_code.html # inspired by: https://stackoverflow.com/questions/45360998/code-folding-in-bookdown
   split_by: none
   split_bib: false
   toc_depth: 4
