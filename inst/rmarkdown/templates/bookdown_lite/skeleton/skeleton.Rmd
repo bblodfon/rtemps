@@ -12,7 +12,11 @@ site: bookdown::bookdown_site
 
 # Intro {-}
 
-Nulla auctor egestas [tincidunt](#sub-analysis). Citing an article [@article]. Refer to section [Analysis].
+Template based on [bookdown](https://bookdown.org/yihui/bookdown/).
+
+Refer to a [sub section](#sub-analysis). 
+Citing an article [@article]. 
+Refer to section [Analysis].
 
 # Input {-}
 
@@ -36,14 +40,23 @@ DT::datatable(mtcars, options = list(pageLength = 3))
 
 > Suspendisse potenti
 
-----
+We can have math formulas inline like this: $E=mc^2$ or make them span an entire line like this:
+\begin{equation} 
+  f=\frac{a}{b+c}
+  (\#eq:eq1)
+\end{equation}
+
+**Create a horizontal line** using [markdown syntax](https://commonmark.org/help/):
+
+---
 
 Cras pulvinar ligula ac nisi porttitor, volutpat congue orci tincidunt. Pellentesque non mi congue, porta enim eget, venenatis sem. Integer suscipit vulputate tellus, eget commodo dolor gravida vel. Suspendisse gravida gravida ligula, in interdum sapien molestie ut.
 
 ### Yet another analysis {-}
 
 <div class="blue-box">
-In ut vehicula risus. [That](#Table1) table!
+In ut vehicula risus. 
+Refer to the [table](#Table1) above!
 </div>
 
 ```{r example plot, warning = FALSE, fig.align='center'}
@@ -66,6 +79,8 @@ gg = ggplot(midwest, aes(x=area, y=poptotal)) +
 
 plot(gg)
 ```
+
+Remember equation \@ref(eq:eq1)!
 
 # Conclusion {-}
 
