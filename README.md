@@ -1,5 +1,11 @@
 # rtemps
 
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/bblodfon/rtemps.svg?branch=master)](https://travis-ci.org/bblodfon/rtemps)
+[![CRAN status](https://www.r-pkg.org/badges/version/rtemps)](https://cran.r-project.org/package=rtemps)
+[![Downloads](https://cranlogs.r-pkg.org/badges/rtemps)](https://cran.r-project.org/package=rtemps)
+<!-- badges: end -->
+
 My personal favourite `R` templates for doing reproducible data analyses.
 
 ## Available Themes
@@ -9,11 +15,12 @@ My personal favourite `R` templates for doing reproducible data analyses.
 
 ## Install
 
+From CRAN:
 ```r
-devtools::install_github("bblodfon/rtemps")
+install.packages("rtemps")
 ```
 
-Note that the template example reports use the libraries [DT](https://rstudio.github.io/DT/), [ggplot2](https://github.com/tidyverse/ggplot2) and [xfun](https://github.com/yihui/xfun).
+Note that the template example reports use the libraries [DT](https://rstudio.github.io/DT/), [ggplot2](https://github.com/tidyverse/ggplot2) and [xfun](https://github.com/yihui/xfun), so you will to install them if you want to see a working example.
 
 ## Usage
 
