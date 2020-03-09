@@ -1,7 +1,7 @@
 # rtemps
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/bblodfon/rtemps.svg?branch=master)](https://travis-ci.org/bblodfon/rtemps)
+[![Travis build status](https://travis-ci.com/bblodfon/rtemps.svg?branch=master)](https://travis-ci.com/bblodfon/rtemps)
 [![CRAN status](https://www.r-pkg.org/badges/version/rtemps)](https://cran.r-project.org/package=rtemps)
 [![Downloads](https://cranlogs.r-pkg.org/badges/rtemps)](https://cran.r-project.org/package=rtemps)
 <!-- badges: end -->
