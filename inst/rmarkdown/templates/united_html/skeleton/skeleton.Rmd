@@ -39,7 +39,10 @@ library(xfun)
 
 `Vestibulum` imperdiet^[Nullam quis sem nunc], ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
 
-<div id="Table1">A nice table example:</div>
+::: {#Table1}
+A nice table example:
+:::
+
 ```{r}
 DT::datatable(mtcars, options = list(pageLength = 3))
 ```
@@ -49,7 +52,10 @@ DT::datatable(mtcars, options = list(pageLength = 3))
 > Suspendisse potenti
 
 We can have math formulas inline like this: $E=mc^2$ or make them span an entire line like this:
-<div id="eq1"></div>
+
+::: {#eq1} 
+:::
+
 $$f=\frac{a}{b+c}$$
 
 **Create a horizontal line** using [markdown syntax](https://commonmark.org/help/):
@@ -60,10 +66,10 @@ Cras pulvinar ligula ac nisi porttitor, volutpat congue orci tincidunt. Pellente
 
 ### Yet another analysis {-}
 
-<div class="blue-box">
+::: {.blue-box}
 In ut vehicula risus.
 Refer to the [table](#Table1) above!
-</div>
+:::
 
 ```{r example plot, warning = FALSE, fig.align='center'}
 options(scipen=999)  # turn-off scientific notation like 1e+48
@@ -90,15 +96,36 @@ Remember [equation 1](#eq1)!
 
 # Conclusion {-}
 
-<div class="green-box">
-  - *Cras tincidunt* felis venenatis pretium iaculis^[In eget eros sit amet leo feugiat consequat]. 
-  - Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
-  - That sums it up!
-</div>
-<br>
-<div class="orange-box">
-Be careful, be gentle, be brave!
-</div>
+::: {#box1 .green-box}
+Wrapping it up!
+:::
+
+::: {#box2 .info-box .caution}
+- *Cras tincidunt* felis venenatis pretium iaculis^[In eget eros sit amet leo feugiat consequat]. 
+- Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
+- That sums it up!
+:::
+
+::: {#box3 .info-box .warning}
+Be careful, be gentle, be brave! 
+And remember the above [box!](#box1)
+:::
+
+::: {.info-box .tip}
+A tip!
+:::
+
+::: {.info-box .note}
+A note!
+:::
+
+::: {.info-box .important}
+I have something **important** to say here!
+:::
+
+::: {#box4 .orange-box}
+An orange box!!!
+:::
 
 # R session info {-}
 

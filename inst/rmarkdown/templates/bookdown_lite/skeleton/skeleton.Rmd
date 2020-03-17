@@ -84,14 +84,35 @@ Remember equation \@ref(eq:eq1)!
 
 # Conclusion {-}
 
-<div class="green-box">
-  - *Cras tincidunt* felis venenatis pretium iaculis ^[Nullam quis sem nunc]. 
-  - Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
-  - That sums it up!
+<div class="green-box" id="box1">
+Wrapping it up!
 </div>
-<br>
+
+```{block2, caution-text, type='caution'}
+- *Cras tincidunt* felis venenatis pretium iaculis ^[Nullam quis sem nunc]. 
+- Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
+- That sums it up!
+```
+
+```{block2, warning-text, type='warning'}
+Be careful, be gentle, be brave! 
+And remember the above [box!](#box1)
+```
+
+```{block2, tip-text, type='tip'}
+A tip!
+```
+
+```{block2, note-text, type='note'}
+A note!
+```
+
+```{block2, important-text, type='important'}
+I have something **important** to say here!
+```
+
 <div class="orange-box">
-Be careful, be gentle, be brave!
+An orange box!!!
 </div>
 
 # R session info {-}
