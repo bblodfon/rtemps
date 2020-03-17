@@ -38,3 +38,10 @@ create_rtemp = function(dirname = "new-dir", template = "united_html") {
   file.rename(file.path(dirname, "skeleton.Rmd"), file.path(dirname, "index.Rmd"))
 }
 
+# Suppress R CMD check note
+#' @importFrom bookdown render_book
+#' @importFrom rmarkdown render
+#' @importFrom knitr read_chunk
+#' @importFrom DT datatable
+#' @importFrom ggplot2 aes
+#' @importFrom xfun session_info
