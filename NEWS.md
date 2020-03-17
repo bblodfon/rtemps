@@ -1,3 +1,7 @@
+# rtemps 0.4.0
+
+- add support for custom info blocks with images (note, tip, warning, caution, important info)
+
 # rtemps 0.3.0
 
 - Updated `DESCRIPTION` - more elaborate on what the templates support

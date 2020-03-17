@@ -1,12 +1,12 @@
 Package: rtemps
 Type: Package
 Title: R Templates for Reproducible Data Analyses
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: person("John", "Zobolas", role = c("aut", "cph", "cre"), 
   email = "bblodfon@gmail.com", comment = c(ORCID = "0000-0002-3609-8674"))
 Description: A collection of R Markdown templates for nicely structured, reproducible 
     data analyses in R. The templates have embedded examples on how to write 
-    citations, footnotes, equations and use colored message boxes, how to 
+    citations, footnotes, equations and use colored message/info boxes, how to 
     cross-reference different parts/sections in the report, provide a nice 
     table of contents (toc) with a References section and proper R session 
     information as well as examples using DT tables and ggplot2 graphs. 
