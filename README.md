@@ -11,7 +11,12 @@ My personal favourite `R` templates for doing reproducible data analyses.
 ## Available Themes
 
 - [United HTML Document](https://bootswatch.com/united/): a bootstrap-based single [R Markdown](https://bookdown.org/yihui/rmarkdown/) document
+
+![](img/united.gif)
+
 - [Bookdown Lite](https://bookdown.org/yihui/bookdown/): a single-paged [gitbook-based](https://www.gitbook.com/) document
+
+![](img/bookdown_lite.gif)
 
 ## Install
 
@@ -20,7 +25,7 @@ From CRAN:
 install.packages("rtemps")
 ```
 
-Note that the template example reports use the libraries [DT](https://rstudio.github.io/DT/), [ggplot2](https://github.com/tidyverse/ggplot2) and [xfun](https://github.com/yihui/xfun), so you will to install them if you want to see a working example.
+Note that the package imports among others the libraries [DT](https://rstudio.github.io/DT/), [ggplot2](https://github.com/tidyverse/ggplot2) and [xfun](https://github.com/yihui/xfun).
 
 ## Usage
 

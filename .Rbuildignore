@@ -4,3 +4,4 @@
 ^CRAN-RELEASE$
 ^cran-comments\.md$
 ^\.travis\.yml$
+^img$
