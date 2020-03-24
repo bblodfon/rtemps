@@ -31,7 +31,10 @@ library(xfun)
 
 `Vestibulum` imperdiet ^[In eget eros sit amet leo feugiat consequat], ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
 
-<div id="Table1">A nice table example:</div>
+:::{#Table1}
+A nice table example:
+:::
+
 ```{r}
 DT::datatable(mtcars, options = list(pageLength = 3))
 ```
@@ -54,12 +57,12 @@ Cras pulvinar ligula ac nisi porttitor, volutpat congue orci tincidunt. Pellente
 
 ### Yet another analysis {-}
 
-<div class="blue-box">
+:::{.blue-box}
 In ut vehicula risus. 
 Refer to the [table](#Table1) above!
-</div>
+:::
 
-```{r example plot, warning = FALSE, fig.align='center'}
+```{r example-plot, warning = FALSE, fig.align='center', fig.cap='A nice figure example'}
 options(scipen=999)  # turn-off scientific notation like 1e+48
 theme_set(theme_bw())  # pre-set the bw theme.
 data("midwest", package = "ggplot2")
@@ -84,36 +87,36 @@ Remember equation \@ref(eq:eq1)!
 
 # Conclusion {-}
 
-<div class="green-box" id="box1">
+:::{#box1 .green-box}
 Wrapping it up!
-</div>
+:::
 
-```{block2, caution-text, type='caution'}
+:::{#caution-text .caution}
 - *Cras tincidunt* felis venenatis pretium iaculis ^[Nullam quis sem nunc]. 
 - Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
 - That sums it up!
-```
+:::
 
-```{block2, warning-text, type='warning'}
+:::{#warning-text .warning}
 Be careful, be gentle, be brave! 
 And remember the above [box!](#box1)
-```
+:::
 
-```{block2, tip-text, type='tip'}
+:::{#tip-text .tip}
 A tip!
-```
+:::
 
-```{block2, note-text, type='note'}
+:::{#note-text .note}
 A note!
-```
+:::
 
-```{block2, important-text, type='important'}
+:::{#important-text .important}
 I have something **important** to say here!
-```
+:::
 
-<div class="orange-box">
-An orange box!!!
-</div>
+:::{.orange-box}
+An orange box!!! Remember figure (\@ref(fig:example-plot))!
+:::
 
 # R session info {-}
 
