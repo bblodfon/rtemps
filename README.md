@@ -31,7 +31,7 @@ Note that the package imports among others the libraries [DT](https://rstudio.gi
 
 Once the templates are installed, you can use them in 2 ways:
 
-1. Within the templates in **RStudio** (highly advised - easiest installation): 
+1. Within the templates in **RStudio** (highly advised - easiest way): 
   - `File` > `New File` > `R Markdown...` > `From Template` (United HTML Theme)
   - `File` > `New Project...` > `New Directory` > `Bookdown Lite project` (Bookdown Lite Theme)
 2. By calling the `create_rtemp()` function which allows you to create a new directory with all the template files inside, ready to be used/rendered.
