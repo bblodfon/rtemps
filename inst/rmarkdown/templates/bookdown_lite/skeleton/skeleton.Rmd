@@ -1,6 +1,6 @@
 ---
 title: "Title"
-author: "[John Zobolas](https://github.com/bblodfon)"
+author: "[Author name](https://github.com/author-name)"
 date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
 description: "Description"
 url: 'https\://username.github.io/reponame/'
