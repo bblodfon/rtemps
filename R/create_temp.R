@@ -19,8 +19,7 @@
 #' @export
 create_rtemp = function(dirname = "new-dir", template = "united_html") {
   # check input
-  templates = c("united_html", "bookdown_lite")
-  temp = match.arg(template, templates)
+  temp = match.arg(template, c("united_html", "bookdown_lite"))
 
   # create directory
   if (dir.exists(dirname)) {
@@ -32,10 +31,36 @@ create_rtemp = function(dirname = "new-dir", template = "united_html") {
   # copy files from template directory
   template.dir = system.file(file.path("rmarkdown", "templates", temp, "skeleton"), package = "rtemps")
   files.to.copy = list.files(template.dir)
-  file.copy(file.path(template.dir, files.to.copy),
-    file.path(dirname), recursive = TRUE)
+  file.copy(file.path(template.dir, files.to.copy), file.path(dirname), recursive = TRUE)
 
   file.rename(file.path(dirname, "skeleton.Rmd"), file.path(dirname, "index.Rmd"))
+}
+
+#' Create Bookdown Lite Project Template
+#'
+#' Code was copied from the \href{https://github.com/rstudio/bookdown/blob/master/R/skeleton.R}{bookdwon package}.
+#'
+#' @importFrom xfun read_utf8 write_utf8
+bookdown_skeleton = function(path) {
+  # ensure directory exists
+  dir.create(path, recursive = TRUE, showWarnings = FALSE)
+
+  # copy 'resources' folder to path
+  resources = system.file('rstudio', 'templates', 'project', 'resources',
+    package = 'rtemps', mustWork = TRUE)
+
+  files = list.files(resources, recursive = TRUE, include.dirs = FALSE)
+
+  source = file.path(resources, files)
+  target = file.path(path, files)
+  file.copy(source, target)
+
+  # add book_filename to _bookdown.yml and default to the base path name
+  f = file.path(path, '_bookdown.yml')
+  x = xfun::read_utf8(f)
+  xfun::write_utf8(c(sprintf('book_filename: "%s"', basename(path)), x), f)
+
+  TRUE
 }
 
 # Suppress R CMD check note
@@ -44,4 +69,3 @@ create_rtemp = function(dirname = "new-dir", template = "united_html") {
 #' @importFrom knitr read_chunk
 #' @importFrom DT datatable
 #' @importFrom ggplot2 aes
-#' @importFrom xfun session_info
