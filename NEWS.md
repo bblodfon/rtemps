@@ -1,6 +1,6 @@
 # rtemps 0.5.0
 
-- Support *Bookdown Lite* theme as a standalone project template via the Rstudio UI
+- Support *Bookdown Lite* theme as a standalone project template via the RStudio UI
 
 # rtemps 0.4.0
 
