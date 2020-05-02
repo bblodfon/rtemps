@@ -1,3 +1,7 @@
+# rtemps 0.5.0
+
+- Support *Bookdown Lite* theme as a standalone project template via the Rstudio UI
+
 # rtemps 0.4.0
 
 - add support for custom info blocks with images (note, tip, warning, caution, important info)
