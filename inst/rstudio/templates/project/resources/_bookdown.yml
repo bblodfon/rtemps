@@ -1,0 +1,3 @@
+output_dir: "docs"
+new_session: true
+delete_merged_file: true
