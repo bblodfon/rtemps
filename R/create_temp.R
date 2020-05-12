@@ -46,14 +46,13 @@ bookdown_skeleton = function(path) {
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
 
   # copy 'resources' folder to path
-  resources = system.file('rstudio', 'templates', 'project', 'resources',
-    package = 'rtemps', mustWork = TRUE)
+  resources = system.file('rstudio', 'templates', 'project', 'resources', package = 'rtemps', mustWork = TRUE)
 
-  files = list.files(resources, recursive = TRUE, include.dirs = FALSE)
+  files = list.files(resources)
 
   source = file.path(resources, files)
-  target = file.path(path, files)
-  file.copy(source, target)
+  target = file.path(path)
+  file.copy(source, target, recursive = TRUE)
 
   # add book_filename to _bookdown.yml and default to the base path name
   f = file.path(path, '_bookdown.yml')
