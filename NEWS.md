@@ -1,3 +1,7 @@
+# rtemps 0.6.0
+
+- Fix bug when copying the `img` directory for the *Bookdown Lite* theme (via the Rstudio UI)
+
 # rtemps 0.5.0
 
 - Support *Bookdown Lite* theme as a standalone project template via the RStudio UI
