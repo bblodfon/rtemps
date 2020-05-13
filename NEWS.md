@@ -1,3 +1,7 @@
+# rtemps 0.7.0
+
+- Bookdown Lite template files are not copied as a Rmarkdown template, only as a Project Bookdown Template
+
 # rtemps 0.6.0
 
 - Fix bug when copying the `img` directory for the *Bookdown Lite* theme (via the Rstudio UI)
