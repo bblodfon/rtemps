@@ -29,11 +29,14 @@ create_rtemp = function(dirname = "new-dir", template = "united_html") {
   dir.create(dirname)
 
   # copy files from template directory
-  template.dir = system.file(file.path("rmarkdown", "templates", temp, "skeleton"), package = "rtemps")
-  files.to.copy = list.files(template.dir)
-  file.copy(file.path(template.dir, files.to.copy), file.path(dirname), recursive = TRUE)
-
-  file.rename(file.path(dirname, "skeleton.Rmd"), file.path(dirname, "index.Rmd"))
+  if (temp == "bookdown_lite") {
+    copy_bookdown_template_files(dirname)
+  } else {
+    template.dir = system.file(file.path("rmarkdown", "templates", "united_html", "skeleton"), package = "rtemps")
+    files.to.copy = list.files(template.dir)
+    file.copy(file.path(template.dir, files.to.copy), file.path(dirname), recursive = TRUE)
+    file.rename(file.path(dirname, "skeleton.Rmd"), file.path(dirname, "index.Rmd"))
+  }
 }
 
 #' Create Bookdown Lite Project Template
@@ -41,7 +44,7 @@ create_rtemp = function(dirname = "new-dir", template = "united_html") {
 #' Code was copied from the \href{https://github.com/rstudio/bookdown/blob/master/R/skeleton.R}{bookdwon package}.
 #'
 #' @importFrom xfun read_utf8 write_utf8
-bookdown_skeleton = function(path) {
+copy_bookdown_template_files = function(path) {
   # ensure directory exists
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
 

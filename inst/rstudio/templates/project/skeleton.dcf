@@ -1,4 +1,4 @@
 Title: Bookdown Lite Project
-Binding: bookdown_skeleton
+Binding: copy_bookdown_template_files
 OpenFiles: _bookdown.yml, _output.yml, index.Rmd
 Icon: book.png
