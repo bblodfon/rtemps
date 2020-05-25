@@ -65,9 +65,17 @@ copy_bookdown_template_files = function(path) {
   TRUE
 }
 
-# Suppress R CMD check note
+#' Dummy function to suppress R CMD check note on some platforms
+#'
 #' @importFrom bookdown render_book
 #' @importFrom rmarkdown render
 #' @importFrom knitr read_chunk
 #' @importFrom DT datatable
 #' @importFrom ggplot2 aes
+dummy_fun = function() {
+  is.function(bookdown::render_book)
+  is.function(rmarkdown::render)
+  is.function(knitr::read_chunk)
+  is.function(DT::datatable)
+  is.function(ggplot2::aes)
+}
