@@ -10,7 +10,7 @@ My personal favourite `R` templates for doing reproducible data analyses.
 
 ## Available Themes
 
-- [United HTML Document](https://bblodfon.github.io/rtemps/united-html/united-html.html): a [bootstrap](https://bootswatch.com/united/) single [R Markdown](https://bookdown.org/yihui/rmarkdown/) document
+- [United HTML Document](https://bblodfon.github.io/rtemps/united-html/united-html.html): a [bootstrap](https://bootswatch.com/united/)-based single [R Markdown](https://bookdown.org/yihui/rmarkdown/) document
 
 ![](img/united.gif)
 
