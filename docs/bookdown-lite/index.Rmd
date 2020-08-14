@@ -1,0 +1,127 @@
+---
+title: "Title"
+author: "[Author name](https://github.com/author-name)"
+date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
+description: "Description"
+url: 'https\://username.github.io/reponame/'
+github-repo: "username/reponame"
+bibliography: references.bib
+link-citations: true
+site: bookdown::bookdown_site
+---
+
+# Intro {-}
+
+Template based on [bookdown](https://bookdown.org/yihui/bookdown/).
+
+Refer to a [sub section](#sub-analysis). 
+Citing an article [@article]. 
+Refer to section [Analysis].
+
+# Input {-}
+
+Loading libraries:
+```{r Load libraries, message = FALSE}
+library(DT)
+library(ggplot2)
+library(xfun)
+```
+
+# Analysis {-}
+
+`Vestibulum` imperdiet ^[In eget eros sit amet leo feugiat consequat], ex vel sodales facilisis, nibh tellus imperdiet massa, sit amet scelerisque orci velit vel tellus. Ut consequat justo tincidunt porttitor varius. Suspendisse erat ipsum, feugiat vitae rhoncus non, molestie ac purus. Morbi aliquet, elit eget blandit suscipit, est lacus facilisis turpis, nec fermentum nunc felis et lorem.
+
+:::{#Table1}
+A nice table example:
+:::
+
+```{r}
+DT::datatable(mtcars, options = list(pageLength = 3))
+```
+
+## Sub analysis {-}
+
+> Suspendisse potenti
+
+We can have math formulas inline like this: $E=mc^2$ or make them span an entire line like this:
+\begin{equation} 
+  f=\frac{a}{b+c}
+  (\#eq:eq1)
+\end{equation}
+
+**Create a horizontal line** using [markdown syntax](https://commonmark.org/help/):
+
+---
+
+Cras pulvinar ligula ac nisi porttitor, volutpat congue orci tincidunt. Pellentesque non mi congue, porta enim eget, venenatis sem. Integer suscipit vulputate tellus, eget commodo dolor gravida vel. Suspendisse gravida gravida ligula, in interdum sapien molestie ut.
+
+### Yet another analysis {-}
+
+:::{.blue-box}
+In ut vehicula risus. 
+Refer to the [table](#Table1) above!
+:::
+
+```{r example-plot, warning = FALSE, fig.align='center', fig.cap='A nice figure example'}
+options(scipen=999)  # turn-off scientific notation like 1e+48
+theme_set(theme_bw())  # pre-set the bw theme.
+data("midwest", package = "ggplot2")
+# midwest <- read.csv("http://goo.gl/G1K41K")  # bkup data source
+
+# Scatterplot
+gg = ggplot(midwest, aes(x=area, y=poptotal)) + 
+  geom_point(aes(col=state, size=popdensity)) + 
+  geom_smooth(method="loess", se=F) + 
+  xlim(c(0, 0.1)) + 
+  ylim(c(0, 500000)) + 
+  labs(subtitle="Area Vs Population", 
+       y="Population", 
+       x="Area", 
+       title="Scatterplot", 
+       caption = "Source: midwest")
+
+plot(gg)
+```
+
+Remember equation \@ref(eq:eq1)!
+
+# Conclusion {-}
+
+:::{#box1 .green-box}
+Wrapping it up!
+:::
+
+:::{#caution-text .caution}
+- *Cras tincidunt* felis venenatis pretium iaculis ^[Nullam quis sem nunc]. 
+- Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
+- That sums it up!
+:::
+
+:::{#warning-text .warning}
+Be careful, be gentle, be brave! 
+And remember the above [box!](#box1)
+:::
+
+:::{#tip-text .tip}
+A tip!
+:::
+
+:::{#note-text .note}
+A note!
+:::
+
+:::{#important-text .important}
+I have something **important** to say here!
+:::
+
+:::{.orange-box}
+An orange box!!! Remember figure (\@ref(fig:example-plot))!
+:::
+
+# R session info {-}
+
+```{r session info, comment=""}
+xfun::session_info()
+```
+
+# References {-}

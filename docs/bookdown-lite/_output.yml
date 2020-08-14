@@ -1,0 +1,20 @@
+bookdown::gitbook:
+  includes:
+    in_header: hide_code.html # inspired by: https://stackoverflow.com/questions/45360998/code-folding-in-bookdown
+  split_by: none
+  split_bib: false
+  toc_depth: 4
+  css: style.css
+  config:
+    toc:
+      collapse: subsection
+      before: |
+        <li><a href="./">Report About Something</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    download: no
+    sharing:
+      github: yes
+      twitter: no
+      facebook: no
+      all: no
