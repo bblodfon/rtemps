@@ -1,3 +1,7 @@
+# rtemps 0.8.0
+
+- Add support for specifying some code blocks to be unfolded at initialization for the *Bookdown Lite* Theme
+
 # rtemps 0.7.0
 
 - Bookdown Lite template files are not copied as a Rmarkdown template, only as a Project Bookdown Template
@@ -12,7 +16,7 @@
 
 # rtemps 0.4.0
 
-- add support for custom info blocks with images (note, tip, warning, caution, important info)
+- Add support for custom info blocks with images (note, tip, warning, caution, important info)
 
 # rtemps 0.3.0
 
