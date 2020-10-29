@@ -120,7 +120,7 @@ An orange box!!! Remember figure (\@ref(fig:example-plot))!
 
 # R session info {-}
 
-```{r session info, comment=""}
+```{r session info, comment="", class.source = 'fold-show'}
 xfun::session_info()
 ```
 
