@@ -1,10 +1,9 @@
 # rtemps
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/bblodfon/rtemps.svg?branch=master)](https://travis-ci.com/bblodfon/rtemps)
+[![R build status](https://github.com/bblodfon/rtemps/workflows/R-CMD-check/badge.svg)](https://github.com/bblodfon/rtemps/actions)
 [![CRAN status](https://www.r-pkg.org/badges/version/rtemps)](https://cran.r-project.org/package=rtemps)
 [![Downloads](https://cranlogs.r-pkg.org/badges/rtemps)](https://cran.r-project.org/package=rtemps)
-[![R build status](https://github.com/bblodfon/rtemps/workflows/R-CMD-check/badge.svg)](https://github.com/bblodfon/rtemps/actions)
 <!-- badges: end -->
 
 My personal favourite `R` templates for doing reproducible data analyses.
