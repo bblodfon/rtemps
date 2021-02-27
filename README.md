@@ -8,6 +8,24 @@
 
 My personal favourite `R` templates for doing reproducible data analyses.
 
+## Citation
+
+If you want to acknowledge this work, cite it as:
+
+Zobolas, J. (2020). Rtemps: R Templates for Reproducible Data Analyses. GitHub Repository. Retrieved from https://github.com/bblodfon/rtemps
+
+BibTeX citation:
+```
+@misc{rtemps,
+author = {Zobolas, John},
+booktitle = {GitHub repository},
+publisher = {GitHub},
+title = {{Rtemps: R Templates for Reproducible Data Analyses}},
+url = {https://github.com/bblodfon/rtemps},
+year = {2020}
+}
+```
+
 ## Available Themes
 
 - [United HTML Document](https://bblodfon.github.io/rtemps/united-html/united-html.html): a [bootstrap](https://bootswatch.com/united/)-based single [R Markdown](https://bookdown.org/yihui/rmarkdown/) document
